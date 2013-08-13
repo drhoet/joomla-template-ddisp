@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>ddisp</name>
+	<version>1.0.0</version>
+	<creationDate>22/07/2013</creationDate>
+	<author>Dries Hoet</author>
+	<authorEmail>You know if you know me...</authorEmail>
+	<authorUrl>http://www.google.com</authorUrl>
+	<copyright>Copyright (c) 2013 - 2013 - Dries Hoet</copyright>
+	<license>Licensed under the Creative Commons CC BY-SA 3.0, http://creativecommons.org/licenses/by-sa/3.0/</license>
+	<description>TPL_DDISP_XML_DESCRIPTION</description>
+	<group>ddisp</group>
+	<identifiedName>ddisp</identifiedName>
+	<files>
+		<folder>stylesheets</folder>
+		<folder>images</folder>
+		<folder>javascripts</folder>
+		<folder>language</folder>
+		<filename>component.php</filename>
+		<filename>index.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>license.txt</filename>
+	</files>
+	<positions>
+		<position>top</position>
+		<position>menu</position>
+		<position>content-top</position>
+		<position>left</position>
+		<position>right</position>
+		<position>content-bottom</position>
+		<position>footer</position>
+		<position>debug</position>
+	</positions>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.ddisp.ini</language>
+	</languages>
+
+	<parameters>
+	</parameters>
+
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="logoFile" class="" type="media" default="" label="TPL_DDISP_LOGO_LABEL" description="TPL_DDISP_LOGO_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,56 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation/components/global";
+@import "foundation/components/type";
+@import "foundation/components/alert-boxes";
+@import "foundation/components/labels";
+@import "foundation/components/inline-lists";
+@import "foundation/components/tables";
+@import "foundation/components/panels";
+@import "foundation/components/section";
+
+@import "settings_app";
+
+h1 {
+	font-size: emCalc(27px);
+}
+
+h2 {
+	font-size: emCalc(17px);
+}
+
+h3 {
+	font-size: emCalc(16px);
+}
+
+h4 {
+	font-style: italic;
+	font-size: emCalc(16px);
+}
+
+h5 {
+	text-decoration: underline;
+	font-size: emCalc(16px);
+}
+
+@media #{$small} {
+    h1,h2,h3,h4,h5,h6 { line-height: $header-line-height; }
+    h1 { font-size: $h1-font-size; }
+    h2 { font-size: $h2-font-size; }
+    h3 { font-size: $h3-font-size; }
+    h4 { font-size: $h4-font-size; }
+}
+
+
+.label {
+	white-space: inherit;
+}
+
+body {
+	padding: $divider; 
+}

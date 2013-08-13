@@ -1,0 +1,45 @@
+// Global Foundation Settings
+@import "settings";
+
+@import "settings_app";
+
+// compass mixins
+@import "compass/css3";
+
+@mixin ie-column-large($size) {
+	.large-#{$size} {
+		font-size: $em-base;
+		position: relative;
+		width: ($row-width * $size / $total-columns);
+		box-sizing: border-box;
+	}
+	
+	.panel .large-#{$size} {
+		width: ($row-width * $size / $total-columns) - 2*$panel-padding;
+	}
+}
+
+@include ie-column-large(12);
+@include ie-column-large(11);
+@include ie-column-large(10);
+@include ie-column-large(9);
+@include ie-column-large(8);
+@include ie-column-large(7);
+@include ie-column-large(6);
+@include ie-column-large(5);
+@include ie-column-large(4);
+@include ie-column-large(3);
+@include ie-column-large(2);
+@include ie-column-large(1);
+
+ul.main-menu {
+	li {
+		ul {
+			@include opacity(1);
+		}
+	}
+}
+
+.show-for-medium-up {
+	display: block !important;
+}

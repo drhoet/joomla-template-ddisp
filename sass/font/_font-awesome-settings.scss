@@ -1,0 +1,49 @@
+/*!
+ *  Based on the Font Awesome package:
+ *
+ *  Font Awesome 3.2.1
+ *  the iconic font designed for Bootstrap
+ *  ------------------------------------------------------------------------------
+ *  The full suite of pictographic icons, examples, and documentation can be
+ *  found at http://fontawesome.io.  Stay up to date on Twitter at
+ *  http://twitter.com/fontawesome.
+ *
+ *  License
+ *  ------------------------------------------------------------------------------
+ *  - The Font Awesome font is licensed under SIL OFL 1.1 -
+ *    http://scripts.sil.org/OFL
+ *  - SASS Files are based on the Font Awesome SASS files, which are licensed under
+ *    MIT License - http://opensource.org/licenses/mit-license.html
+ *
+ */
+
+$fontName: "FontAwesome";
+$fontFileName: "../font/fontawesome-webfont" !default;
+$fontVersion: "3.2.1" !default;
+$classPrefix: "awesome-icon-";
+
+@mixin i-class($name,$pua) {
+  .#{$classPrefix}#{$name}:before { 
+    content: "\f#{$pua}";
+    padding-right: emCalc(5px);
+  }
+}
+
+@mixin ie-class($name,$pua) {
+  .#{$classPrefix}#{$name} { 
+    *zoom: expression( this.runtimeStyle['zoom'] = "1", this.innerHTML = "&#xf#{$pua};"); 
+  }
+}
+
+@mixin face {
+	@font-face {
+		font-family: $fontName;
+		src: url('#{$fontFileName}.eot?v=#{$fontVersion}');
+		src: url('#{$fontFileName}.eot?#iefix&v=#{$fontVersion}') format('embedded-opentype'),
+			 url('#{$fontFileName}.woff?v=#{$fontVersion}') format('woff'),
+			 url('#{$fontFileName}.ttf?v=#{$fontVersion}') format('truetype'),
+			 url('#{$fontFileName}.svg#fontawesomeregular?v=#{$fontVersion}') format('svg');
+		font-weight: normal;
+		font-style: normal;
+	}
+}

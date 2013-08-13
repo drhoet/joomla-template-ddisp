@@ -1,0 +1,5 @@
+$site-green-highlight: lighten($primary-color, $button-function-factor / 2) !default; 
+$site-green-selected: darken($primary-color, $button-function-factor) !default;
+$divider: emCalc(10px) !default;
+
+$menu-item-width: 200px !default;
