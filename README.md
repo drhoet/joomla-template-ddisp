@@ -1,5 +1,5 @@
-joomla-ddisp
-============
+joomla-template-ddisp
+=====================
 
 Joomla template for Dierendispensarium website
 
