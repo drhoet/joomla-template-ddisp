@@ -130,7 +130,9 @@ $doc->addStyleSheet('templates/'.$this->template.'/stylesheets/typography.css');
 		<script src="templates/<?= $this->template ?>/javascripts/foundation/foundation.topbar.js"></script-->
 
 		<script>
-			jQuery(document).foundation();
+			jQuery(window).load(function() {
+				jQuery(document).foundation();
+			});
 		</script>
 	</body>
 </html>
